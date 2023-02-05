@@ -1,0 +1,85 @@
+._menubar {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.headerImg {
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+._menuLeft {
+  height: 100%;
+  box-sizing: border-box;
+}
+._menuRight {
+  height: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+._menuMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  ._menuRight {
+    display: none;
+  }
+  ._menuMobile {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    padding-right: 0.5rem;
+  }
+
+  /* /Hamburger Css */
+  #clicked {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 100% !important;
+  }
+
+  #clicked span {
+    background: #fff;
+    border-radius: 10px;
+    height: 5px;
+    margin: 4px 0;
+    transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+
+  span:nth-of-type(1) {
+    width: 50%;
+  }
+
+  span:nth-of-type(2) {
+    width: 100%;
+  }
+
+  span:nth-of-type(3) {
+    width: 75%;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  #check ~ span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(7px, 0px);
+  }
+
+  #check ~ span:nth-of-type(2) {
+    transform-origin: top;
+    transform: rotatez(-45deg);
+  }
+
+  #check ~ span:nth-of-type(3) {
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(21px, -6px) rotatez(45deg);
+  }
+}

@@ -1,0 +1,66 @@
+._home {
+  height: 90vh;
+}
+
+@media only screen and (min-width: 600px) {
+  ._profile {
+    height: 55%;
+    position: relative;
+  }
+  ._intro {
+    height: 45%;
+  }
+  ._profileImage {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 10%;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  ._profile-fName {
+    font-size: 50px;
+    line-height: 50px;
+    transform: translate(32%, 100%);
+  }
+  ._profile-lName {
+    font-size: 50px;
+    line-height: 50px;
+    transform: translate(25%, 100%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  ._profile {
+    height: 55%;
+    position: relative;
+  }
+  ._intro {
+    height: 45%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: var(--colorBgDark);
+  }
+  ._profileImage {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: -10%;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  ._profile-fName {
+    font-size: 55px;
+    line-height: 55px;
+    transform: translate(8%, 100%);
+  }
+  ._profile-lName {
+    font-size: 55px;
+    line-height: 55px;
+    transform: translate(8%, 100%);
+  }
+}

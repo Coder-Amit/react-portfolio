@@ -6,7 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#main-layout {
+  display: flex;
+  justify-content: center;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -19,4 +22,5 @@ code {
   --colorBgDark: #242424;
   --colorLightYellow: #efa649;
   --colorDarkYellow: #f86d09;
+  --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }

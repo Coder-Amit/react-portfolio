@@ -3,10 +3,12 @@ import './home.css'
 import {
     ArrowStepInRight24Filled
 } from '@fluentui/react-icons'
+import HomeFooter from './HomeFooter'
 
 function Home() {
-    return (
+    return (<>
         <div className='_home'>
+
             <div className='_profile'>
                 <p className='_profile-fName'>Amit</p>
                 <p className='_profile-lName'>Mishra.</p>
@@ -26,6 +28,8 @@ function Home() {
                 </p>
             </div>
         </div>
+        <HomeFooter />
+    </>
     )
 }
 

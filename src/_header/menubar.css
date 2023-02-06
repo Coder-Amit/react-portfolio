@@ -4,11 +4,21 @@
   align-items: center;
   box-sizing: border-box;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
 }
 .headerImg {
+  width: 4.5rem;
   height: 100%;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--colorDarkYellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
 }
 ._menuLeft {
   height: 100%;
@@ -18,7 +28,50 @@
   height: 3rem;
   width: 100%;
   box-sizing: border-box;
-  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+._menuRight_nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+._menuRight_nav a {
+  width: auto;
+  color: #fff;
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+._menuRight_nav a::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: var(--colorDarkYellow);
+  left: -1px;
+  bottom: -1px;
+  transform: scale(0);
+  transition: transform 150ms ease-in-out;
+}
+._menuRight_nav a:hover::after {
+  content: "";
+  position: absolute;
+  width: 110%;
+  height: 1px;
+  background-color: var(--colorDarkYellow);
+  left: -1px;
+  bottom: -1px;
+  transform: scale(1);
+}
+._menuRight_nav .active {
+  color: var(--colorDarkYellow);
+}
+._menuEnd {
+  width: 4.5rem;
 }
 ._menuMobile {
   display: none;

@@ -1,8 +1,9 @@
 ._home {
-  height: 90vh;
+  height: 70%;
   display: grid;
   grid-template-columns: 50% 50%;
 }
+
 p {
   padding: 0;
   margin: 0;
@@ -110,6 +111,8 @@ p {
 @media only screen and (max-width: 600px) {
   ._home {
     display: block;
+    height: 100%;
+    margin-bottom: 2rem;
   }
   ._profile {
     height: 55%;
@@ -126,27 +129,48 @@ p {
     position: absolute;
     height: 100%;
     top: 0;
-    right: -10%;
+    right: -20%;
     filter: grayscale(50%);
+  }
+  .pageFooter {
+    position: fixed;
+    height: 1.5rem;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--colorBgDark);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-top: 1px solid #292922;
+  }
+  .footerMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorLightYellow);
+    cursor: pointer;
   }
 }
 @media only screen and (min-width: 768px) {
   ._home {
-    height: 90vh;
+    height: 70%;
     display: grid;
     grid-template-columns: 50% 50%;
   }
   ._profile {
-    height: 70%;
+    height: 100%;
     position: relative;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
   ._intro {
     box-sizing: border-box;
-    height: 70%;
+    height: 100%;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: var(--colorBgDark);
     padding: 2rem;
+  }
+  .pageFooter {
+    height: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
   ._profileImage {
     position: absolute;
@@ -154,5 +178,48 @@ p {
     top: 0;
     right: 10%;
     filter: grayscale(50%);
+  }
+  .footerMobile {
+    display: none;
+  }
+  .footerLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorDarkYellow);
+    cursor: pointer;
+    background-color: var(--colorBgDark);
+    font-size: 1rem;
+    font-family: var(--font-mono);
+  }
+  .footerLeft span {
+    display: flex;
+    align-items: center;
+    transform: translate(0);
+    transition: transform 200ms ease-in-out;
+  }
+  .footerLeft span:hover > .footerLeftIcon {
+    transform: translate(6rem);
+    transition: transform 200ms ease-in-out;
+    color: var(--colorLightYellow);
+  }
+  .footerRight {
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .skill-slider {
+    box-sizing: border-box;
+    width: 200%;
+    display: flex;
+    gap: 15px;
+    /* padding: 0 0.5rem; */
+  }
+  .skills-icons {
+    width: 100px;
+    height: 100px;
+    background-color: var(--colorBgDark);
+    object-fit: contain;
   }
 }

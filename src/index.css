@@ -24,3 +24,12 @@ code {
   --colorDarkYellow: #f86d09;
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
+
+.default-icons {
+  width: 24px;
+  stroke: #fff;
+  cursor: pointer;
+}
+.default-icons:hover {
+  stroke: var(--colorDarkYellow);
+}

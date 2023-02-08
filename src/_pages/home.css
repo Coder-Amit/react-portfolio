@@ -107,6 +107,24 @@ p {
     margin: 0;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
+  .footerMobile span {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorLightYellow);
+    cursor: pointer;
+    font-family: var(--font-mono);
+  }
+  .footerLeft,
+  .footerRight {
+    display: none;
+  }
+  .footerMobile span:hover > .footerLeftIcon {
+    transform: translate(6rem);
+    transition: transform 200ms ease-in-out;
+    color: var(--colorLightYellow);
+  }
 }
 @media only screen and (max-width: 600px) {
   ._home {
@@ -141,12 +159,23 @@ p {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-top: 1px solid #292922;
   }
-  .footerMobile {
+  .footerMobile span {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--colorLightYellow);
     cursor: pointer;
+    font-family: var(--font-mono);
+  }
+  .footerLeft,
+  .footerRight {
+    display: none;
+  }
+  .footerMobile span:hover > .footerLeftIcon {
+    transform: translate(6rem);
+    transition: transform 200ms ease-in-out;
+    color: var(--colorLightYellow);
   }
 }
 @media only screen and (min-width: 768px) {
@@ -188,7 +217,6 @@ p {
     align-items: center;
     color: var(--colorDarkYellow);
     cursor: pointer;
-    background-color: var(--colorBgDark);
     font-size: 1rem;
     font-family: var(--font-mono);
   }
@@ -208,6 +236,15 @@ p {
     padding: 1rem;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+    background-color: var(--colorBgDark);
+    gap: 1rem;
+  }
+  .footerRight span {
+    display: inline-block;
+    height: 2px;
+    width: 40%;
+    background-color: var(--colorDarkYellow);
   }
   .skill-slider {
     box-sizing: border-box;

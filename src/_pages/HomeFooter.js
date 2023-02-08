@@ -1,9 +1,16 @@
 import React from 'react'
 import { ArrowRight16Filled } from "@fluentui/react-icons"
+import { Github, Instagram, LinkedIn } from '../icons/Icons'
 
 function HomeFooter() {
     return (<>
         <div div className='pageFooter'>
+            <div className='footerRight'>
+                <span></span>
+                <Github />
+                <Instagram />
+                <LinkedIn />
+            </div>
             <div className='footerLeft'>
                 <span>
                     <ArrowRight16Filled className='footerLeftIcon' />
@@ -11,12 +18,12 @@ function HomeFooter() {
                     Skills
                 </span>
             </div>
-            <div className='footerRight'>
-                <SkillSlider />
-            </div>
             <div className='footerMobile'>
-                <ArrowRight16Filled />
-                Skills
+                <span>
+                    <ArrowRight16Filled className='footerLeftIcon' />
+                    &nbsp;
+                    Skills
+                </span>
             </div>
         </div>
     </>

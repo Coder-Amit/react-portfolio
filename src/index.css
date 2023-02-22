@@ -25,6 +25,9 @@ code {
   --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
+a {
+  text-decoration: none;
+}
 .default-icons {
   width: 24px;
   stroke: #fff;

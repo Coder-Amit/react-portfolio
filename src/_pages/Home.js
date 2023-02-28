@@ -7,6 +7,7 @@ import HomeFooter from './HomeFooter'
 import { useLocation } from 'react-router-dom'
 import { Skills } from './Skills'
 import Experience from './Experience'
+import Contact from './Contact'
 
 function Home() {
     const location = useLocation()
@@ -20,6 +21,7 @@ function Home() {
             </div>}
             {location.pathname === "/skills" && <Skills />}
             {location.pathname === "/exp" && <div style={{ padding: '2rem' }}><Experience /></div>}
+            {location.pathname === '/contact' && <div style={{ padding: '2rem' }}><Experience /></div>}
             <div className='_intro'>
 
                 {location.pathname === '/' && <>
@@ -36,6 +38,7 @@ function Home() {
                 </>}
                 {location.pathname === '/skills' && <div style={{ opacity: '0.5', height: "100%" }}><Experience /></div>}
                 {location.pathname === '/exp' && <p>Comming soon...</p>}
+                {location.pathname === '/contact' && <Contact />}
             </div>
 
 

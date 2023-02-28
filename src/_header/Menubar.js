@@ -7,7 +7,7 @@ export const navItem = [
     { name: "Skills", urlTarget: '/skills' },
     { name: "Experiance", urlTarget: '/exp' },
     { name: "Project", urlTarget: '/' },
-    { name: "Contact", urlTarget: '/' },
+    { name: "Contact", urlTarget: '/contact' },
 ]
 function Menubar() {
 
@@ -20,6 +20,12 @@ function Menubar() {
         }
         if (location.pathname === "/skills") {
             setState("Skills")
+        }
+        if (location.pathname === "/exp") {
+            setState("Experiance")
+        }
+        if (location.pathname === "/contact") {
+            setState("Contact")
         }
     }, [location.pathname])
 

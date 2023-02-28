@@ -36,6 +36,14 @@ function App() {
           }>
 
           </Route>
+          <Route path='/contact' element={
+            <>
+              <Menubar />
+              <Home />
+            </>
+          }>
+
+          </Route>
         </Routes>
       </Router>
 

@@ -28,11 +28,18 @@ function HomeFooter() {
                         Experiance
                     </span>
                 </Link>}
-                {location.pathname === '/exp' && <Link to="/projects">
+                {location.pathname === '/exp' && <Link to="/contact">
                     <span>
                         <ArrowRight16Filled className='footerLeftIcon' />
                         &nbsp;
-                        Project
+                        Contact
+                    </span>
+                </Link>}
+                {location.pathname === '/project' && <Link to="/contact">
+                    <span>
+                        <ArrowRight16Filled className='footerLeftIcon' />
+                        &nbsp;
+                        Contact
                     </span>
                 </Link>}
 

@@ -32,7 +32,7 @@ function MenuMobile() {
                         <MenuItem onClick={() => navigate('/exp')}>Experience</MenuItem>
 
                         <MenuItem onClick={() => navigate('/')}>Project</MenuItem>
-                        <MenuItem onClick={() => navigate('/')}>Contact</MenuItem>
+                        <MenuItem onClick={() => navigate('/contact')}>Contact</MenuItem>
                     </MenuList>
                 </MenuPopover>
             </Menu>

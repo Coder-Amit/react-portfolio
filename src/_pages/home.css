@@ -259,7 +259,6 @@ p {
     width: 200%;
     display: flex;
     gap: 15px;
-    /* padding: 0 0.5rem; */
   }
   .skills-icons {
     width: 100px;
